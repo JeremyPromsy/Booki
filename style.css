@@ -1,0 +1,15 @@
+
+
+@font-face {
+    font-family: 'Raleway';
+    src: url(https://fonts.google.com/specimen/Raleway);
+  }
+  
+  .maPolice {
+    font-family: 'Raleway';
+  }
+  
+  h1, h2, h3, div, form, p {
+    font-family: 'Raleway';
+  }
+    
