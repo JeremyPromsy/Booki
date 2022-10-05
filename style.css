@@ -34,8 +34,6 @@
 
 .headerHostAct{
   grid-area: button;
-  padding: 10px;
-  text-align: center;
 }
 
 .headerHostActButton {
