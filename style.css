@@ -4,12 +4,61 @@
     font-family: 'Raleway';
     src: url(https://fonts.google.com/specimen/Raleway);
   }
-  
-  .maPolice {
-    font-family: 'Raleway';
-  }
-  
-  h1, h2, h3, div, form, p {
-    font-family: 'Raleway';
-  }
     
+.maPolice {
+    font-family: 'Raleway';
+  }
+  
+.h1, h2, h3, div, form, p {
+    font-family: 'Raleway';
+  }
+
+
+.header {
+    grid-template-columns: auto 1fr auto auto;
+    grid-template-areas: "logo . navbar button";
+}
+
+.header {
+  display: grid;
+  align-items: center;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.BookiLogo {
+  grid-area: logo;
+  padding: 10px;
+  height: 70px;
+}
+
+.headerHostAct{
+  grid-area: button;
+  padding: 10px;
+  text-align: center;
+}
+
+.headerHostActButton {
+  padding: 20px;
+  text-align: center;
+}
+
+.headerHostActButton[data-active=true] {
+  border-top: 2px solid #0065FC;
+}
+
+.a {
+color: none;
+text-decoration: none;
+background-color: transparent;
+}
+
+.a:hover {
+  border-top: 3px solid #0065FC;
+}
+
+a:-webkit-any-link {
+  color: #0065FC;
+  cursor: pointer;
+  text-decoration: underline;
+}

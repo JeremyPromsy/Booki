@@ -1,23 +1,27 @@
 <!DOCTYPE html>
     <html>
+      <script src="https://kit.fontawesome.com/f2e3363b96.js" crossorigin="anonymous"></script>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style.css" />
+
 <!-- HEADER -->
-        <head>
-            <script src="https://kit.fontawesome.com/f2e3363b96.js" crossorigin="anonymous"></script>
-            <meta charset="utf-8" />
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <link rel="stylesheet" href="style.css" />
-            <image src="images/logo/Booki.png" alt="Logo Booki" />
+        <header class="header">
+            <image class="BookiLogo" src="images/logo/Booki.png" alt="Logo Booki" />
+            <nav class="headerHostAct">
+              <a class="headerHostActButton" href="#hosting" data-active="true">Hébergement</a>
+              <a class="headerHostActButton" href="#activity" data-active="false">Activités</a>
+            </nav>
+            <br/>
+        </header>
+<!-- Titre -->          
             <title> Projet Booki </title>
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
-
-                <nav class="headerHostAct">
-                    <a class="headerHostActButton" href="#hosting">Hébergement</a>
-                    <a class="headerHostActButton" href="#activity">Activités</a>
-                </nav>
-                <br/>
-            <form>
-                <section class="search">
+        
+              
+<!-- Search -->
+        <section class="search">
                     <form class="searchForm" action="index.html" method="GET">
                       <span class="searchicon">
                         <i class="fa-solid fa-location-dot"></i>
@@ -28,8 +32,9 @@
                       <button class="searchbutton">
                         <span class="searchbutton">Rechercher</span>
                       </button>
-            </form>
+                    </form>
 
+<!-- Filtre -->                    
             <div class="searchFilters">
                 <h2 class="searchFiltersTitle">Filtres</h2>
                 <div class="searchFiltersFilter">
@@ -57,7 +62,8 @@
                   <span class="searchFiltersFilterTitle">Animaux autorisés</span>
                 </div>
               </div>
-        
+
+<!-- Text Info -->      
             <p class="TextInfo">
                 <div class="TextInfoIcon">
                     <i class="fa-solid fa-circle-info" style="color:#0065FC"></i> Plus de 500 logements sont disponibles dans cette ville</i>
@@ -65,9 +71,9 @@
             </p>
         
         
-        </head>
+       
 
-
+<!-- Body --> 
         <body>
             <!-- Hébergements-->
             <h2 id="Hébergements">Hébergements</h2>
@@ -78,7 +84,8 @@
 
 
         </body>
-        <!-- Footer-->
+
+<!-- Footer-->
         <footer class="footer">
 
 
