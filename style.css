@@ -22,13 +22,11 @@
 .header {
   display: grid;
   align-items: center;
-  max-width: 1440px;
   margin: auto;
 }
 
 .BookiLogo {
   grid-area: logo;
-  padding: 10px;
   height: 70px;
 }
 
@@ -41,18 +39,14 @@
   text-align: center;
 }
 
-.headerHostActButton[data-active=true] {
-  border-top: 2px solid #0065FC;
-}
-
 .a {
-color: none;
-text-decoration: none;
-background-color: transparent;
+  color: none;
+  text-decoration: none;
+  background-color: transparent;
 }
 
 .a:hover {
-  border-top: 3px solid #0065FC;
+    border-top: 3px solid #0065FC;
 }
 
 a:-webkit-any-link {
@@ -60,3 +54,10 @@ a:-webkit-any-link {
   cursor: pointer;
   text-decoration: underline;
 }
+
+.headerHostActButton[data-active=true] {
+  border-top: 2px solid #0065FC;
+}
+
+
+
