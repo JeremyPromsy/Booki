@@ -1,5 +1,5 @@
 
-
+/* POLICE */
 @font-face {
     font-family: 'Raleway';
     src: url(https://fonts.google.com/specimen/Raleway);
@@ -13,40 +13,31 @@
     font-family: 'Raleway';
   }
 
+.html {
+    max-width: 1400px; 
+}
 
-.header {
-    grid-template-columns: auto 1fr auto auto;
-    grid-template-areas: "logo . navbar button";
+/* HEADER */
+.BookiLogo {
+    grid-area: logo;
+    height: 70px;
+}
+  
+.headerHostAct{
+    grid-area: button;
 }
 
 .header {
   display: grid;
   align-items: center;
-  margin: auto;
-}
-
-.BookiLogo {
-  grid-area: logo;
-  height: 70px;
-}
-
-.headerHostAct{
-  grid-area: button;
+  grid-template-columns: 1fr 1fr 1fr auto;
+  grid-template-areas: "logo . . button";
 }
 
 .headerHostActButton {
   padding: 20px;
   text-align: center;
-}
-
-.a {
-  color: none;
-  text-decoration: none;
-}
-
-.headerHostActButton:-webkit-any-link {
   color: black;
-  cursor: pointer;
   text-decoration: none;
 }
 
@@ -55,5 +46,32 @@
   color: #0065FC;
 }
 
+/* Tablettes */
+@media screen and (min-width: 768px) and (max-width: 991px)
+{
+    
+}
 
+/* Téléphone */
+@media screen and (max-width: 767px)
+{
+  .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  } 
 
+  .BookiLogo {
+    height: 40px;
+  }
+
+  .headerHostActButton {
+    border-bottom: 2px solid #f2f2f2; 
+  }
+
+  .headerHostActButton:hover {
+    border-bottom: 2px solid #0065FC;
+    border-top: none;
+  }    
+}
