@@ -99,6 +99,7 @@ nav {
   padding: 10px;
 }
 
+
 /* Filtre */
 .searchFilters {
   display: flex;
@@ -137,6 +138,12 @@ nav {
   margin-right: 20px;
 }
 
+/* Desktop */
+@media screen and (min-width: 992px) {
+  .searchbuttonIcon{
+    display: none;
+  }
+}
 
 /* Tablettes */
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -178,7 +185,11 @@ nav {
       border-bottom: 2px solid #0065FC;
       color: #0065FC;
   }
-  
+
+.searchbuttonText{
+    display: none;
+  }  
+
 .searchFiltersTitle {
       width: 100%;
   }    
@@ -186,7 +197,12 @@ nav {
 
 /* Téléphone */
 @media screen and (max-width: 767px) {
-.header {
+
+h1
+  {
+      font-size: 20px; 
+  }
+  .header {
   display: flex;
   flex-direction: column;
 } 
@@ -223,6 +239,10 @@ nav {
     border-top: none;
     border-bottom: 2px solid #0065FC;
     color: #0065FC;
+}
+
+.searchbuttonText{
+  display: none;
 }
 
 .searchFiltersTitle {
