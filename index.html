@@ -1,104 +1,125 @@
 <!DOCTYPE html>
-    <html>
-      <title> Projet Booki </title>
+  <html>
+    <title> Projet Booki </title>
       <script src="https://kit.fontawesome.com/f2e3363b96.js" crossorigin="anonymous"></script>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="stylesheet" href="style.css" />
 
 <!-- HEADER -->
-        <header class="header">
-            <image class="BookiLogo" src="Images/logo/Booki.png" alt="Logo Booki" />
-            <nav class="headerHostAct">
+    <header class="header">
+      <section class="bookiDivLogo">
+            <image class="bookiLogo" src="Images/logo/Booki@3x.png" alt="Logo Booki" />
+      </section>
+      <div>
+        <nav class="headerHostAct">
+          <div class="menuContainer">
+            <div>
               <a class="headerHostActButton" href="#Hébergements">Hébergement</a>
+            </div>
+          </div>
+          <div class="menuContainer">
+            <div>
               <a class="headerHostActButton" href="#Activités">Activités</a>
-            </nav>
-            <br/>
-        </header>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
 <!-- Titre -->          
-        <section class="Titre">
-            <h1 class="H1Titre">Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p class="PTitre">En plein centre ville ou en pleine nature</p>
-        </section>
+    <section class="Titre">
+        <h1 class="H1Titre">Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p class="PTitre">En plein centre ville ou en pleine nature</p>
+    </section>
               
 <!-- Search -->
-        <section class="search">
-            <form class="searchForm" action="index.html" method="GET">
-                      <span class="searchicon">
-                        <i class="fa-solid fa-location-dot"></i>
-                      </span>
+    <section class="search">
+      <form class="searchForm" action="index.html" method="GET">
+        <span class="searchicon">
+          <i class="fa-solid fa-location-dot"></i>
+        </span>
                       
-                      <input class="searchtext" type="search" placeholder="Marseille, France" size="25" />
-                      
-                      <button class="searchbutton">
-                        <span class="searchbutton">Rechercher</span>
-                        <i class="searchFormSubmitinputIcon fas fa-search"></i>
-                      </button>
-            </form>
+        <input class="searchtext" type="search" placeholder="Marseille, France" size="25" />
+           <button class="searchbutton">
+              <span class="searchbutton">Rechercher</span>
+              <i class="searchFormSubmitinputIcon fas fa-search"></i>
+            </button>
+      </form>
+    </section>
 
 <!-- Filtre -->                    
-            <div class="searchFilters">
-                <h2 class="searchFiltersTitle">Filtres</h2>
-                <div class="searchFiltersFilter">
-                  <div class="searchFiltersFilterIcon">
-                    <i class="fa-solid fa-money-bill-wave"style="color:#0065FC"></i>
-                  </div>
-                  <span class="searchFiltersFilterTitle">Économique</span>
-                </div>
-                <div class="searchFiltersFilter">
-                  <div class="searchFiltersFilterIcon">
-                    <i class="fa-solid fa-person" style="color:#0065FC"></i>
-                  </div>
-                  <span class="searchFiltersFilterTitle">Familial</span>
-                </div>
-                <div class="searchFiltersFilter">
-                  <div class="searchFiltersFilterIcon">
-                    <i class="fa-solid fa-heart" style="color:#0065FC"></i>
-                  </div>
-                  <span class="searchFiltersFilterTitle">Romantique</span>
-                </div>
-                <div class="searchFiltersFilter">
-                  <div class="searchFiltersFilterIcon">
-                    <i class="fa-solid fa-dog" style="color:#0065FC"></i>
-                  </div>
-                  <span class="searchFiltersFilterTitle">Animaux autorisés</span>
-                </div>
-              </div>
+    <section class="Filtre">      
+      <div class="searchFilters">
+
+        <h2 class="searchFiltersTitle">Filtres</h2>
+
+          <div class="searchFiltersFilter">
+            <div class="searchFiltersFilterIcon">
+              <i class="fa-solid fa-money-bill-wave"style="color:#0065FC"></i>
+            </div>
+              <span class="searchFiltersFilterTitle">Économique</span>
+          </div>
+
+          <div class="searchFiltersFilter">
+            <div class="searchFiltersFilterIcon">
+              <i class="fa-solid fa-person" style="color:#0065FC"></i>
+            </div>
+              <span class="searchFiltersFilterTitle">Familial</span>
+          </div>
+
+          <div class="searchFiltersFilter">
+            <div class="searchFiltersFilterIcon">
+              <i class="fa-solid fa-heart" style="color:#0065FC"></i>
+            </div>
+              <span class="searchFiltersFilterTitle">Romantique</span>
+          </div>
+
+          <div class="searchFiltersFilter">
+            <div class="searchFiltersFilterIcon">
+              <i class="fa-solid fa-dog" style="color:#0065FC"></i>
+            </div>
+              <span class="searchFiltersFilterTitle">Animaux autorisés</span>
+          </div>
+
+        </div>
+      </section>
 
 <!-- Text Info -->      
-            <p class="TextInfo">
-                <div class="TextInfoIcon">
-                    <i class="fa-solid fa-circle-info" style="color:#0065FC"></i> Plus de 500 logements sont disponibles dans cette ville</i>
-                </div>     
-            </p>
+      <section class="TextInfo">
+          <div class="TextInfoIcon">
+            <i class="fa-solid fa-circle-info" style="color:#0065FC"></i> Plus de 500 logements sont disponibles dans cette ville</i>
+          </div>     
+      </section>
         
         
        
 
 <!-- Body --> 
-      <body>
-        <section class="Hébergements" id="Hébergements">
+    <body>
+
+      <section class="Hébergements" id="Hébergements">
             <!-- Hébergements-->
             <h2 id="Hébergements">Hébergements</h2>
       </section>  
 
-        <section class="populaires">
+      <section class="populaires">
             <!-- Les plus populaires-->
             <h2 id="Les plus populaires">Les plus populaires</h2>
-        </section> 
+      </section> 
 
-        <section class="Activités" id="Activités">  
+      <section class="Activités" id="Activités">  
             <!-- Activités-->
             <h2 id="#Activités">Activités</h2>
-        </section>
+      </section>
 
-      </body>
+    </body>
 
 <!-- Footer-->
-        <footer class="footer">
+    <footer class="footer">
 
 
             
-        </footer>
+    </footer>
 
-    </html>
+  </html>
