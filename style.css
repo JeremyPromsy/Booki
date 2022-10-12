@@ -50,6 +50,18 @@ nav {
   display: flex;
 }
 
+.titre{
+  margin-left: 15px;
+}
+
+.search{
+  margin-left: 15px;
+}
+
+.textInfo{
+  margin-left: 15px;
+}
+
 .menuContainer {
   display: flex;
   align-items: center;
@@ -71,13 +83,14 @@ nav {
   color: #0065FC;
 }
 
+
 /* Partie recherche */
 .searchicon {
   background-color: #F2F2F2;
   text-align: center;
   padding: 10px;
-  border-radius: 5px 0 0 5px;
-  box-sizing: border-box;
+  border-radius: 10px 0 0 10px;
+  box-sizing: content-box;
 }
 
 .searchtext {
@@ -85,7 +98,7 @@ nav {
   border-left: none;
   border-top: #F2F2F2 2px solid;
   border-bottom: #F2F2F2 2px solid;
-  box-sizing: border-box;
+  box-sizing: content-box;
   font-weight: bold;
   padding: 10px;
 }
@@ -95,7 +108,7 @@ nav {
   color: white;
   font-weight: bold;
   border: none;
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 10px 10px 0;
   padding: 10px;
 }
 
@@ -103,9 +116,10 @@ nav {
 /* Filtre */
 .searchFilters {
   display: flex;
-  margin-top: 30px;
+  margin-top: 15px;
   flex-wrap: wrap;
   font-weight: bold;
+  margin-left: 15px;
 }
 
 .searchFiltersTitle {
@@ -137,6 +151,9 @@ nav {
   margin-left: 20px;
   margin-right: 20px;
 }
+
+
+
 
 /* Desktop */
 @media screen and (min-width: 992px) {
@@ -191,7 +208,7 @@ nav {
   }  
 
 .searchFiltersTitle {
-      width: 100%;
+  width: 100%;
   }    
 }
 
@@ -243,6 +260,10 @@ h1
 
 .searchbuttonText{
   display: none;
+}
+
+.searchbutton {
+  border-radius: 10px 10px 10px 10px;
 }
 
 .searchFiltersTitle {
