@@ -243,6 +243,7 @@ a{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-right: 10px;
 }
 
 .hebergement .populaire .liste {
@@ -253,6 +254,12 @@ a{
 .hebergement .populaire .liste a {
   width: 100%;
   margin-bottom: 15px;
+}
+
+.hebergement .titre2 {
+    margin-left: 20px;
+    width: 90%;
+    
 }
 
 .hebergement .populaire .liste a .article {
