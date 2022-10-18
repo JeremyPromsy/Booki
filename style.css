@@ -23,6 +23,11 @@ h2
       font-size: 20px; 
   }
 
+h3
+  {
+      font-size:15px; 
+  } 
+
 p
   {
   font-size: 15px; 
@@ -32,12 +37,11 @@ p
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
   max-width: 1400px; 
 }
 
 body {
-  margin: 0px; 
+  margin: 0px;
 }
 
 /* HEADER */
@@ -158,9 +162,13 @@ nav {
 }
 
 /* Hébergements Grande Partie */
-.hébergements{
+.hebergement {
   display: flex;
   justify-content: space-between;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  width: 100%;
 }
 
 a{
@@ -169,84 +177,120 @@ a{
 }
 
 /* Hébergements */
-.hébergementsPart {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.hebergement .marseille {
+  width: 65%;
+}
+
+.hebergement .container {
   background-color: #F2F2F2;
+  padding: 5px;
   border-radius: 20px;
-  margin: 15px;
-  width: 900px;
-}
-
-.hébergementsHeader{
-  width: 100%;
-  margin-left: 30px;
-}
-
-.hébergementsAfficher{
-  width: 100%;
-  margin-top: 15px;
-  margin-bottom: 30px;
-  margin-left: 30px;
-}
-
-.hébergementsFiche {
-  border-radius: 20px;
-  background-color: white;
-  margin: 5px;
-  width: 275px;
-}
-
-.hébergementsFicheExempleImage {
-  border-radius: 20px 20px 0 0;
-  object-fit: cover;
-  width: 100%;
-  height: 150px;
-}
-
-/* Populaires */
-.hébergementsPopulaires {
-  display: flex;
-  flex-direction: column;
-  background-color: #F2F2F2;
-  border-radius: 20px;
-  margin: 15px;
-  width: 480px;
-}
-
-.hébergementsPopulairesHeader{
-  display: flex;
-  justify-content: space-between;
-  margin-left: 30px;
-  margin-right: 30px;
-}
-
-.hébergementsPopulairesFiche {
-  display: flex;
-  background-color: white;
-  border-radius: 20px;
-  margin: 10px;
-}
-
-.hébergementsPopulairesFicheContenuImage {
-  object-fit: cover;
-  border-radius: 20px 0 0 20px;
-  width: 150px;
   height: 100%;
 }
 
-.hébergementsPopulairesFicheContenuTexte{
-  margin-left: 15px;
+.hebergement .liste {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.hebergement .liste a {
+  width: 32%;
+  margin-bottom: 20px;
+}
+
+.hebergement .liste a .article {
+  background-color: white;
+  border-radius: 25px;
+}
+
+.hebergement .marseille .photo {
+  width: 96%;
+  height: 110px;
+  border-radius: 25px 25px 0px 0px;
+  object-fit: cover;
+}
+
+.hebergement .liste a .article .photo {
+  padding: 5px;
+}
+
+.hebergement .liste a .article .contenue {
+  padding-left: 10px;
+}
+
+.titre3 {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.paragraphe {
+  margin: 0;
+}
+
+.hebergement .liste a .article .contenue .etoile {
+  padding-left: 5px;
+  margin: 0;
+}
+
+/* Populaire */
+.hebergement .populaire {
+  width: 33%;
+}
+
+.hebergement .populaire .icone {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hebergement .populaire .liste {
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.hebergement .populaire .liste a {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.hebergement .populaire .liste a .article {
+  display: flex;
+  flex-direction: row;
+  height: 145px;
+}
+
+.hebergement .populaire .photo {
+  border-radius: 25px 0px 0px 25px;
+  width: 40%;
+  object-fit: cover;
+}
+
+.hebergement .populaire .liste a .article .carton {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+}
+
+.hebergement .populaire .liste a .article .contenue {
+  padding: 10px 15px 0px 5px;
+  margin: 0;
+  height: 100px;
+}
+
+.hebergement .populaire .article .etoile {
+  padding-left: 5px;
+  margin: 0;
 }
 
 
 /* Etoile */
-.etoileIcon[data-active=false] {
+.icon[data-active=false] {
   color: #d9d9d9;
 }
 
-.etoileIcon[data-active=true] {
+.icon[data-active=true] {
   color: #0065FC;
 }
 
