@@ -301,12 +301,6 @@ a{
   width: 60%;
 }
 
-.hebergement .populaire .liste a .article .contenue {
-  padding: 10px 15px 0px 5px;
-  margin: 0;
-  height: 100px;
-}
-
 .hebergement .populaire .article .etoile {
   padding-left: 5px;
   margin: 0;
@@ -359,57 +353,7 @@ footer .colonne ul {
 
 /* Tablettes */
 @media screen and (min-width: 768px) and (max-width: 991px) {
-.header {
-    display: flex;
-    flex-direction: column;
-  } 
-    
-.bookiDivLogo {
-      display: flex;
-      justify-content: center;
-  }
-  
-.bookiLogo {
-      height: 60px;
-  }
-  
-.headerHostAct {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-  
-  
-.menuContainer {
-      border-top: none;
-      height: 40px;
-      border-bottom: 2px solid #f2f2f2; 
-      margin-left: 0px;
-      margin-right: 0px;
-      display: flex;
-      flex-grow: 1;
-      justify-content: center;
-      width: 50%;
-  }
-    
-.menuContainer:hover {
-      border-top: none;
-      border-bottom: 2px solid #0065FC;
-      color: #0065FC;
-  }
-
-.searchbuttonText{
-    display: none;
-  }  
-
-.searchFiltersTitle {
-  width: 100%;
-  }    
-}
-
-/* Téléphone */
-@media screen and (max-width: 767px) {
-
+/* Header*/
 h1
   {
       font-size: 20px; 
@@ -433,8 +377,7 @@ h1
   align-items: center;
   justify-content: space-around;
 }
-
-
+/* Menu */
 .menuContainer {
     border-top: none;
     height: 40px;
@@ -452,7 +395,7 @@ h1
     border-bottom: 2px solid #0065FC;
     color: #0065FC;
 }
-
+/* Search */
 .searchbuttonText{
   display: none;
 }
@@ -464,7 +407,125 @@ h1
 .searchFiltersTitle {
     width: 100%;
 }
+/* Hébergement */
+.hebergement {
+  flex-wrap: wrap;
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+}
 
+.hebergement .marseille {
+  order: 2;
+  width: 100%;
+}
+
+.hebergement .marseille .container {
+  background-color: white;
+}
+
+.hebergement .container {
+    border-radius: 0;
+}
+
+.hebergement .marseille .liste {
+  flex-direction: column;
+}
+
+.hebergement .marseille .liste a {
+  width: 97%;
+  margin-bottom: 30px;
+}
+
+.hebergement .marseille .liste a .article {
+  height: 320px;
+}
+
+.hebergement .marseille .photo {
+  height: 200px;
+  width: 99%;
+}
+
+.afficher {
+  padding-top: 5px;
+}
+
+.hebergement .populaire {
+  order: 1;
+  width: 100%;
+  margin-right: 0px;
+}
+
+.hebergement .populaire .liste a .article {
+  height: 180px;
+}
+
+
+.hebergement .populaire .liste a .article .carton {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/* Téléphone */
+
+@media screen and (max-width: 767px) {
+/* Header*/
+h1
+  {
+      font-size: 20px; 
+  }
+  .header {
+  display: flex;
+  flex-direction: column;
+} 
+  
+.bookiDivLogo {
+    display: flex;
+    justify-content: center;
+}
+
+.bookiLogo {
+    height: 50px;
+}
+
+.headerHostAct {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+/* Menu */
+.menuContainer {
+    border-top: none;
+    height: 40px;
+    border-bottom: 2px solid #f2f2f2; 
+    margin-left: 0px;
+    margin-right: 0px;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    width: 50%;
+}
+  
+.menuContainer:hover {
+    border-top: none;
+    border-bottom: 2px solid #0065FC;
+    color: #0065FC;
+}
+/* Search */
+.searchbuttonText{
+  display: none;
+}
+
+.searchbutton {
+  border-radius: 10px 10px 10px 10px;
+}
+
+.searchFiltersTitle {
+    width: 100%;
+}
+/* Hébergement */
 .hebergement {
   flex-wrap: wrap;
   width: 100%;
@@ -523,7 +584,7 @@ h1
   flex-direction: column;
 }
 
-
+/* footer */
 .footer{
   flex-direction: column;
 }
