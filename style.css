@@ -40,8 +40,12 @@ p
   max-width: 1400px; 
 }
 
+html {
+  margin: 0;
+}
+
 body {
-  margin: 0px;
+  margin: 0;
 }
 
 /* HEADER */
@@ -165,9 +169,9 @@ nav {
 .hebergement {
   display: flex;
   justify-content: space-between;
-  padding-top: 30px;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
   width: 100%;
 }
 
@@ -177,11 +181,11 @@ a{
 }
 
 /* Hébergements */
-.hebergement .marseille {
+.marseille {
   width: 65%;
 }
 
-.hebergement .container {
+.container {
   background-color: #F2F2F2;
   padding: 5px;
   border-radius: 20px;
@@ -195,8 +199,8 @@ a{
 }
 
 .hebergement .liste a {
-  width: 32%;
-  margin-bottom: 20px;
+  width: 30%;
+  margin: 10px;
 }
 
 .hebergement .liste a .article {
@@ -204,9 +208,13 @@ a{
   border-radius: 25px;
 }
 
+.hebergement .marseille .article {
+  box-shadow: 0px 0px 10px 0px #a5a5a5;
+}
+
 .hebergement .marseille .photo {
   width: 96%;
-  height: 110px;
+  height: 130px;
   border-radius: 25px 25px 0px 0px;
   object-fit: cover;
 }
@@ -217,33 +225,39 @@ a{
 
 .hebergement .liste a .article .contenue {
   padding-left: 10px;
+  padding-top: 10pX;
 }
 
 .titre3 {
-  font-size: 15px;
-  font-weight: bold;
   margin: 0;
+  margin-left: 5px;
 }
 
 .paragraphe {
-  margin: 0;
+  margin-top: 5px;
+  margin-left: 5px;
 }
 
 .hebergement .liste a .article .contenue .etoile {
-  padding-left: 5px;
-  margin: 0;
+  padding-bottom: 15px;
+  margin-left: 5px;
+}
+
+.afficher {
+  padding-top: 15px;
+  padding-left: 20px;
 }
 
 /* Populaire */
 .hebergement .populaire {
-  width: 33%;
+  width: 34%;
 }
 
 .hebergement .populaire .icone {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .hebergement .populaire .liste {
@@ -258,14 +272,13 @@ a{
 
 .hebergement .titre2 {
     margin-left: 20px;
-    width: 90%;
-    
 }
 
 .hebergement .populaire .liste a .article {
   display: flex;
   flex-direction: row;
-  height: 145px;
+  height: 180px;
+  margin-right: 20px;
 }
 
 .hebergement .populaire .photo {
@@ -300,6 +313,33 @@ a{
 .icon[data-active=true] {
   color: #0065FC;
 }
+
+/* footer */
+.footer{
+  display: flex;
+  background-color: #F2F2F2;
+}
+
+
+.footer .colonne {
+  width: 35%;
+}
+
+footer .colonne ul {
+  list-style-type: none;
+}
+
+.footer .colonne .titre {
+  margin-top: 15px;
+  margin-left: 40px;
+  margin-bottom: 15px;
+}
+
+.footer .colonne .titre .lien {
+  margin-top: 15px;
+  margin-bottom: 15px;  
+}
+
 
 
 /* Desktop */
@@ -416,6 +456,72 @@ h1
 .searchFiltersTitle {
     width: 100%;
 }
+
+.hebergement {
+  flex-wrap: wrap;
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.hebergement .marseille {
+  order: 2;
+  width: 100%;
+}
+
+.hebergement .marseille .container {
+  background-color: white;
+}
+
+.hebergement .container {
+    border-radius: 0;
+}
+
+.hebergement .marseille .liste {
+  flex-direction: column;
+}
+
+.hebergement .marseille .liste a {
+  width: 97%;
+  margin-bottom: 30px;
+}
+
+.hebergement .marseille .liste a .article {
+  height: 270px;
+}
+
+.hebergement .marseille .photo {
+  height: 160px;
+  width: 98%;
+}
+
+.afficher {
+  padding-top: 5px;
+}
+
+.hebergement .populaire {
+  order: 1;
+  width: 100%;
+  margin-right: 0px;
+}
+
+.hebergement .populaire .liste a .article {
+  height: 145px;
+}
+
+
+.hebergement .populaire .liste a .article .carton {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  background-color: #F2F2F2;
+}
+
 
 }
 
