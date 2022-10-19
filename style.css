@@ -80,15 +80,19 @@ nav {
   align-items: center;
   height: 60px;
   border-top: 2px solid white;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 40px;
+  margin-right: 60px;
 }
 
 .headerHostActButton {
   height: 20px;
   text-align: center;
-  color: black;
   text-decoration: none;
+  color: black;
+}
+
+.headerHostActButton:hover {
+  color: #0065FC;
 }
 
 .menuContainer:hover {
@@ -150,6 +154,10 @@ nav {
   margin-bottom: 15px;
 }
 
+.searchFiltersFilter:hover{
+  background-color: #DEEBFF;
+}
+
 .searchFiltersFilterIcon {
   display: flex;
   align-items: center;
@@ -175,7 +183,7 @@ nav {
   width: 100%;
 }
 
-a{
+.hebergement a{
   color: black;
   text-decoration: none;
 }
@@ -294,7 +302,6 @@ a{
 }
 
 .hebergement .populaire .liste a .article .contenue {
-  padding: 10px 15px 0px 5px;
   margin: 0;
   height: 100px;
 }
@@ -318,8 +325,13 @@ a{
 .footer{
   display: flex;
   background-color: #F2F2F2;
+  padding-top: 30px;
 }
 
+.footer a{
+  color: black;
+  text-decoration: none;
+}
 
 .footer .colonne {
   width: 35%;
