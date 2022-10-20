@@ -220,23 +220,23 @@ a{
   box-shadow: 0px 0px 10px 0px #a5a5a5;
 }
 
-.hebergement .marseille .photo {
+.hebergement .marseille .image {
   width: 96%;
   height: 130px;
   border-radius: 25px 25px 0px 0px;
   object-fit: cover;
 }
 
-.hebergement .liste a .article .photo {
+.hebergement .liste a .article .image {
   padding: 5px;
 }
 
-.hebergement .liste a .article .contenue {
+.hebergement .liste a .article .contenu {
   padding-left: 10px;
   padding-top: 10pX;
 }
 
-.titre3 {
+.nomLogement {
   margin: 0;
   margin-left: 5px;
 }
@@ -246,7 +246,7 @@ a{
   margin-left: 5px;
 }
 
-.hebergement .liste a .article .contenue .etoile {
+.hebergement .liste a .article .contenu .etoile {
   padding-bottom: 15px;
   margin-left: 5px;
 }
@@ -278,7 +278,7 @@ a{
   margin-bottom: 15px;
 }
 
-.hebergement .titre2 {
+.hebergement .nomPart {
     margin-left: 20px;
 }
 
@@ -289,7 +289,7 @@ a{
   margin-right: 20px;
 }
 
-.hebergement .populaire .photo {
+.hebergement .populaire .image {
   border-radius: 25px 0px 0px 25px;
   width: 40%;
   object-fit: cover;
@@ -301,7 +301,7 @@ a{
   width: 60%;
 }
 
-.hebergement .populaire .liste a .article .contenue {
+.hebergement .populaire .liste a .article .contenu {
   padding: 10px 15px 0px 5px;
   margin: 0;
   height: 100px;
@@ -447,7 +447,7 @@ footer .colonne ul {
   height: 320px;
 }
 
-.hebergement .marseille .photo {
+.hebergement .marseille .image {
   height: 200px;
   width: 99%;
 }
@@ -565,7 +565,7 @@ footer .colonne ul {
   height: 270px;
 }
 
-.hebergement .marseille .photo {
+.hebergement .marseille .image {
   height: 160px;
   width: 98%;
 }
