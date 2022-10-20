@@ -324,23 +324,47 @@ a{
 
 /* Activités */
 .activités {
-  width: 100%;
+  margin: 30px;
 }
 
 .activités .nomPart {
-  margin-left: 20px;
   width: 100%;
 }
 
+.activités .classement {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
+.activités .classement a {
+  width: 23%;
+  margin-bottom: 15px;
+}
 
+.activités .classement a .article {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px 0px #a5a5a5;
+}
+
+.activités .image {
+  border-radius: 25px 25px 0px 0px;
+  object-fit: cover;
+}
+
+.activités .contenu {
+  margin-left: 20px;
+}
 
 /* footer */
 .footer{
   display: flex;
   background-color: #F2F2F2;
 }
-
 
 .footer .colonne {
   width: 35%;
@@ -368,6 +392,9 @@ footer .colonne ul {
   .searchbuttonIcon{
     display: none;
   }
+
+
+
 }
 
 /* Tablettes */
@@ -485,6 +512,16 @@ footer .colonne ul {
   flex-direction: column;
 }
 
+
+.activités .classement a {
+  width: 49%;
+}
+
+.activités .image{
+  height: 200px;
+}
+
+
 }
 
 
@@ -601,6 +638,18 @@ footer .colonne ul {
 .hebergement .populaire .liste a .article .carton {
   display: flex;
   flex-direction: column;
+}
+
+.activités .classement {
+  flex-direction: column;
+}
+
+.activités .classement a {
+  width: 100%;
+}
+
+.activités .image{
+  height: 150px;
 }
 
 .footer{
