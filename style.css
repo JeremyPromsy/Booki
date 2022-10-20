@@ -322,6 +322,19 @@ a{
   color: #0065FC;
 }
 
+/* Activités */
+.activités {
+  width: 100%;
+}
+
+.activités .nomPart {
+  margin-left: 20px;
+  width: 100%;
+}
+
+
+
+
 /* footer */
 .footer{
   display: flex;
