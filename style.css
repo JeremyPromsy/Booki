@@ -33,11 +33,13 @@ p
   font-size: 15px; 
   }
 
-.corps {
+.corpsContainer {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 1400px; 
+  justify-content: center; 
+}
+
+.corps{
+  max-width: 1400px;
 }
 
 html {
@@ -80,8 +82,8 @@ nav {
   align-items: center;
   height: 60px;
   border-top: 2px solid white;
-  margin-left: 40px;
-  margin-right: 60px;
+  margin-left: 20px;
+  margin-right: 30px;
 }
 
 .headerHostActButton {
@@ -324,25 +326,14 @@ a{
 
 /* Activités */
 .activités {
-  margin: 30px;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 30px;
 }
 
 .activités .nomPart {
   width: 100%;
 }
-
-.activités .classement {
-  display: flex;
-  align-items: stretch;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.activités .classement a {
-  width: 23%;
-  margin-bottom: 15px;
-}
-
 .activités .classement a .article {
   display: flex;
   flex-direction: column;
@@ -386,13 +377,62 @@ footer .colonne ul {
 }
 
 
-
 /* Desktop */
 @media screen and (min-width: 992px) {
   .searchbuttonIcon{
     display: none;
   }
 
+  .activités .classement {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 500px;
+  }
+
+  .activités .classement1 {
+    width: 23%;
+    height: 100%;
+  }
+  .activités .classement1 .image {
+    height: 450px;
+  }
+  
+  .activités .classement2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 23%;
+    height: 100%;
+  }
+  .activités .classement2-1 .image {
+    height: 230px;
+  }
+  .activités .classement2-2 .image {
+    height: 150px;
+  }
+  
+  .activités .classement3 {
+    width: 23%;
+    height: 100%;
+  }
+  .activités .classement3 .image {
+    height: 450px;
+  }
+  
+  .activités .classement4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 23%;
+    height: 100%;
+  }
+  .activités .classement4-1 .image {
+    height: 180px;
+  }
+  .activités .classement4-2 .image {
+    height: 200px;
+  }
 
 
 }
@@ -512,13 +552,42 @@ footer .colonne ul {
   flex-direction: column;
 }
 
-
-.activités .classement a {
-  width: 49%;
+.activités {
+  margin-right: 30px;
 }
 
+.activités .classement{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.activités .classement1 {
+  margin-bottom: 3px;
+ }
+ .activités .classement2-1 {
+  margin-top: 3px;
+  margin-bottom: 6px;
+ }
+ .activités .classement2-2 {
+  margin-top: 6px;
+  margin-bottom: 3px;
+ }
+ .activités .classement3 {
+  margin-top: 3px;
+  margin-bottom: 3px;
+ }
+.activités .classement4-1 {
+  margin-top: 3px;
+  margin-bottom: 6px;
+}
+.activités .classement4-2 {
+  margin-top: 6px;
+ 
+ }
+
 .activités .image{
-  height: 200px;
+  height: 250px;
 }
 
 
@@ -640,13 +709,38 @@ footer .colonne ul {
   flex-direction: column;
 }
 
-.activités .classement {
-  flex-direction: column;
+.activités {
+  margin-right: 30px;
 }
 
-.activités .classement a {
-  width: 100%;
+.activités .classement{
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100%;
 }
+
+.activités .classement1 {
+  margin-bottom: 10px;
+ }
+ .activités .classement2-1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+ }
+ .activités .classement2-2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+ }
+ .activités .classement3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+ }
+.activités .classement4-1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.activités .classement4-2 {
+  margin-top: 10px;
+ }
 
 .activités .image{
   height: 150px;
