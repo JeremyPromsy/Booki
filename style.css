@@ -13,6 +13,7 @@
     font-family: 'Raleway';
   }
 
+/* Taille texte */
 h1
   {
       font-size: 30px; 
@@ -33,6 +34,7 @@ p
   font-size: 15px; 
   }
 
+/* Taille Contenu */
 .corpsContainer {
   display: flex;
   justify-content: center; 
@@ -64,6 +66,7 @@ nav {
   display: flex;
 }
 
+/* Marge page */
 .titre{
   margin-left: 15px;
 }
@@ -76,7 +79,7 @@ nav {
   margin-left: 15px;
 }
 
-
+/* Boutons Hébergements/Activités */
 .menuContainer {
   display: flex;
   align-items: center;
@@ -314,7 +317,6 @@ a{
   margin: 0;
 }
 
-
 /* Etoile */
 .icon[data-active=false] {
   color: #d9d9d9;
@@ -351,7 +353,7 @@ a{
   margin-left: 20px;
 }
 
-/* footer */
+/* Footer */
 .footer{
   display: flex;
   background-color: #F2F2F2;
@@ -377,12 +379,20 @@ footer .colonne ul {
 }
 
 
+
+
+
+
+
 /* Desktop */
 @media screen and (min-width: 992px) {
+ 
+/* Bouton Recherche: Enlever Icon */ 
   .searchBoutonIcon{
     display: none;
   }
 
+/* Activités */
   .activités .classement {
     display: flex;
     flex-wrap: wrap;
@@ -433,12 +443,16 @@ footer .colonne ul {
   .activités .classement4-2 .image {
     height: 200px;
   }
-
-
 }
+
+
+
+
 
 /* Tablettes */
 @media screen and (min-width: 768px) and (max-width: 991px) {
+ 
+/* Header */
   h1
   {
       font-size: 20px; 
@@ -457,12 +471,12 @@ footer .colonne ul {
     height: 50px;
 }
 
+/* Boutons Recherches/Activités */
 .headerHostAct {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-
 
 .menuContainer {
     border-top: none;
@@ -482,6 +496,7 @@ footer .colonne ul {
     color: #0065FC;
 }
 
+/* Partie Search */
 .searchBoutonText{
   display: none;
 }
@@ -494,6 +509,7 @@ footer .colonne ul {
     width: 100%;
 }
 
+/* Hébergement */
 .hebergement {
   flex-wrap: wrap;
   width: 100%;
@@ -536,6 +552,7 @@ footer .colonne ul {
   padding-top: 5px;
 }
 
+/* Populaire */
 .hebergement .populaire {
   order: 1;
   width: 100%;
@@ -552,6 +569,7 @@ footer .colonne ul {
   flex-direction: column;
 }
 
+/* Activités */
 .activités {
   margin-right: 30px;
 }
@@ -583,19 +601,21 @@ footer .colonne ul {
 }
 .activités .classement4-2 {
   margin-top: 6px;
- 
- }
+}
 
 .activités .image{
   height: 250px;
 }
-
-
 }
+
+
+
 
 
 /* Téléphone */
 @media screen and (max-width: 767px) {
+  
+/* Header Téléphone */
   h1
   {
       font-size: 20px; 
@@ -620,7 +640,7 @@ footer .colonne ul {
   justify-content: space-around;
 }
 
-
+/* Boutons Recherches/Activités */
 .menuContainer {
     border-top: none;
     height: 40px;
@@ -651,6 +671,7 @@ footer .colonne ul {
     width: 100%;
 }
 
+/* Hébergements */
 .hebergement {
   flex-wrap: wrap;
   width: 100%;
@@ -693,6 +714,7 @@ footer .colonne ul {
   padding-top: 5px;
 }
 
+/* Populaires */
 .hebergement .populaire {
   order: 1;
   width: 100%;
@@ -709,6 +731,7 @@ footer .colonne ul {
   flex-direction: column;
 }
 
+/* Activités */
 .activités {
   margin-right: 30px;
 }
@@ -746,6 +769,7 @@ footer .colonne ul {
   height: 150px;
 }
 
+/* Footer */
 .footer{
   flex-direction: column;
 }
@@ -754,7 +778,3 @@ footer .colonne ul {
   width: 100%;
 }
 }
-
-
-
-
