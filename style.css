@@ -107,6 +107,10 @@ nav {
 
 
 /* Partie recherche */
+.searchForm{
+  display: flex;
+}
+
 .searchicon {
   background-color: #F2F2F2;
   text-align: center;
