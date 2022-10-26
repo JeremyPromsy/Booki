@@ -38,6 +38,7 @@ p
 .corpsContainer {
   display: flex;
   justify-content: center; 
+  overflow: hidden; 
 }
 
 .corps{
