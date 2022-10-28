@@ -268,7 +268,7 @@ a{
 
 /* Populaire */
 .hebergement .populaire {
-  width: 34%;
+  width: 32%;
 }
 
 .hebergement .populaire .icone {
@@ -366,19 +366,20 @@ a{
 
 .footer .colonne {
   width: 35%;
+  padding-left: 20px;
 }
 
 footer .colonne ul {
   list-style-type: none;
+  padding-left: 0px;
 }
 
-.footer .colonne .titre {
+.footer .colonne .titreFooter {
   margin-top: 15px;
-  margin-left: 40px;
   margin-bottom: 15px;
 }
 
-.footer .colonne .titre .lien {
+.footer .colonne .titreFooter .lien {
   margin-top: 15px;
   margin-bottom: 15px;  
 }
@@ -397,12 +398,19 @@ footer .colonne ul {
     display: none;
   }
 
+/* Hébergements */
+.hebergement .populaire {
+  margin-right: 30px;
+}
+
+
 /* Activités */
   .activités .classement {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     height: 500px;
+    margin-right: 30px;
   }
 
   .activités .classement1 {
@@ -582,38 +590,22 @@ footer .colonne ul {
 .activités .classement{
   display: flex;
   flex-direction: column;
-  height: 100%;
 }
 
-.activités .classement1 {
-  margin-bottom: 3px;
- }
- .activités .classement2-1 {
-  margin-top: 3px;
-  margin-bottom: 6px;
- }
- .activités .classement2-2 {
-  margin-top: 6px;
-  margin-bottom: 3px;
- }
- .activités .classement3 {
-  margin-top: 3px;
-  margin-bottom: 3px;
- }
-.activités .classement4-1 {
-  margin-top: 3px;
-  margin-bottom: 6px;
+.articleContainer{
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
-.activités .classement4-2 {
-  margin-top: 6px;
+
+.classement2, .classement4 {
+  display: flex;
+  flex-direction: column;
 }
 
 .activités .image{
-  height: 250px;
+  height: 400px;
 }
 }
-
-
 
 
 
@@ -684,10 +676,12 @@ footer .colonne ul {
   padding-right: 0px;
 }
 
-.hebergement .marseille {
+.marseille {
   order: 2;
   width: 100%;
+  background-color: white;
 }
+
 
 .hebergement .marseille .container {
   background-color: white;
@@ -699,6 +693,7 @@ footer .colonne ul {
 
 .hebergement .marseille .liste {
   flex-direction: column;
+    margin-right: 10px;
 }
 
 .hebergement .marseille .liste a {
@@ -712,7 +707,7 @@ footer .colonne ul {
 
 .hebergement .marseille .image {
   height: 160px;
-  width: 98%;
+  width: 97%;
 }
 
 .afficher {
@@ -742,33 +737,19 @@ footer .colonne ul {
 }
 
 .activités .classement{
+  display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
-  height: 100%;
 }
 
-.activités .classement1 {
-  margin-bottom: 10px;
- }
- .activités .classement2-1 {
-  margin-top: 10px;
-  margin-bottom: 10px;
- }
- .activités .classement2-2 {
-  margin-top: 10px;
-  margin-bottom: 10px;
- }
- .activités .classement3 {
-  margin-top: 10px;
-  margin-bottom: 10px;
- }
-.activités .classement4-1 {
-  margin-top: 10px;
-  margin-bottom: 10px;
+.articleContainer{
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
-.activités .classement4-2 {
-  margin-top: 10px;
- }
+
+.classement2, .classement4 {
+  display: flex;
+  flex-direction: column;
+}
 
 .activités .image{
   height: 150px;
